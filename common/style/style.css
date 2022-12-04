@@ -569,6 +569,7 @@ padding: 0 20px;
     color: #fff;
     font-size: 16px;
     padding-left: 30px;
+    text-transform: lowercase;
     
 }
 .cscenter_container .cscenter_info .cscenter2_inner{
@@ -578,6 +579,9 @@ padding: 0 20px;
 }
 .cscenter_container .cscenter_info .cscenter_info2 p{
     color: #ccc;
+}
+.cscenter_container .cscenter_info .cstxt1 p{
+    text-transform: capitalize;
 }
 .cscenter_container .cscenter_info .cscenter_info2 h4{
     padding-bottom: 5px;
