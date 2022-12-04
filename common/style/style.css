@@ -142,7 +142,6 @@ header .title .menu_container .menu .sub_menu li:hover{
     
 
     transition: 1s;
-    opacity: 0;
 }
 .top_btn .top_inner{
     margin: 2px;    
