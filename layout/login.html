@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="title" content="DESING COCO">
+    <meta name="description" content="javascript 사이트입니다.">
+
+    <!-- 오픈그라피 -->
+    <meta property="og:title" content="DESING COCO">
+    <meta property="og:description" content="javascript 사이트입니다.">
+    <meta property="og:image" content="https://cksgml529.github.io/web_coco/common/img/what4.jpg">
+    <meta property="og:url" content="https://cksgml529.github.io/web_coco/">
+    <title>DESIGN COCO | 로그인</title>
+    <link rel="stylesheet" href="../common/style/minireset.min.css">
+    <link rel="shortcut icon" href="../common/img/favicon/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../common/style/login.css">
+
+    <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+  integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+
+<script>
+    <script defer src="./login.js"></script>
+    <script defer>
+  Kakao.init('cd780fc8ec61a6d008c1b5518e5dd55b'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+    <style>
+    </style>
+</head>
+<body>
+    <form>
+        <h1><a href="../index.html"><img src="../common/img/logo.png" alt="logo"></a></h1>
+     <input type="text" name="userID" id="userID" placeholder="아이디">
+     <input type="text" name="userPW" id="userPW" placeholder="비밀번호">
+    <label><input type="checkbox">로그인 상태 유지</label>
+    <button class="submit">로그인</button>
+  <div class="search">
+        <button class="none">비밀번호 찾기</button>
+        <button class="none">아이디 찾기</button>
+        <button><a href="#">회원가입</a></button>
+    </div>
+    <div class="sns">
+        <p>sns 로그인</p>
+<a id="kakao-login-btn" href="javascript:loginWithKakao()">
+  <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222"
+    alt="카카오 로그인 버튼" />
+</a>
+<p id="token-result"></p>
+
+    </div>
+    </form>
+    <script>
+  function loginWithKakao() {
+    Kakao.Auth.authorize({
+      redirectUri: 'https://developers.kakao.com/tool/demo/oauth',
+    });
+  }
+
+  // 아래는 데모를 위한 UI 코드입니다.
+  displayToken()
+  function displayToken() {
+    var token = getCookie('authorize-access-token');
+
+    if(token) {
+      Kakao.Auth.setAccessToken(token);
+      Kakao.Auth.getStatusInfo()
+        .then(function(res) {
+          if (res.status === 'connected') {
+            document.getElementById('token-result').innerText
+              = 'login success, token: ' + Kakao.Auth.getAccessToken();
+          }
+        })
+        .catch(function(err) {
+          Kakao.Auth.setAccessToken(null);
+        });
+    }
+  }
+
+  function getCookie(name) {
+    var parts = document.cookie.split(name + '=');
+    if (parts.length === 2) { return parts[1].split(';')[0]; }
+  }
+</script>
+</body>
+</html>

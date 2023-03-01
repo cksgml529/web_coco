@@ -1,0 +1,69 @@
+@charset "utf-8";
+body{
+    display: grid;
+    place-content: center center;
+}
+form{
+width: 50vw;
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+form h1{
+    margin-bottom: 2.5vw;
+}
+form input{
+    width: 35%;
+    padding: 8px 12px;
+    margin-bottom: .5vw;
+}
+form input:last-child{
+    width: 5%;
+    padding: 0;
+    margin-bottom: 1.5vw;
+}
+form label{
+width: 35%;
+font-size: 14px;
+}
+form .submit{
+    width: 35%;
+    border: none;
+    padding: .5vw;
+    margin-bottom: .8vw;
+    font-weight: 600;
+    background-color: #337ab7;
+    font-size: 1.1em;
+    color: #fff;
+    border-radius: 5px;
+}
+form .search{
+    width: 35%;
+    display: flex;
+}
+form .search button{
+    width: 100%;
+    border: none;
+    margin-right: .2vw;
+    background-color: transparent;
+    border-right: 1px solid #000;
+    cursor: pointer;
+}
+form .search button:last-child{
+    border: none;
+}
+
+form .search button:last-child{
+    margin: 0;
+}
+form .sns{margin-top: 2vw; text-transform: uppercase; font-weight: 700;}
+form .sns p{
+    margin-bottom: .8vw;
+    text-align: center;
+}
+form .sns .kakao{
+    width: 2.344vw;height:2.344vw;
+    margin: 1vw auto 0;
+}

@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="web_박찬희">
-    <meta name="description" content="하하핳...">
+    <meta name="title" content="DESING COCO">
+    <meta name="description" content="javascript 사이트입니다.">
 
     <!-- 오픈그라피 -->
-    <meta property="og:title" content="221205_web_박찬희">
-    <meta property="og:description" content="web.....">
+    <meta property="og:title" content="DESING COCO">
+    <meta property="og:description" content="javascript 사이트입니다.">
     <meta property="og:image" content="https://cksgml529.github.io/web_coco/common/img/what4.jpg">
     <meta property="og:url" content="https://cksgml529.github.io/web_coco/">
 
@@ -29,17 +29,19 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Noto+Sans+KR:wght@300;400;900&display=swap"
         rel="stylesheet">
 
-
     <link rel="stylesheet" href="./common/style/style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script defer src="./index.js"></script>    
 </head>
 <body>
     <div class="register">
         <div class="register_inner">
             <ul>
-                <li><a href="#"><span class="material-symbols-rounded">
+                <li><a href="./index.html"><span class="material-symbols-rounded">
                     home
                     </span>home</a></li>
-                <li><a href="#"><span class="material-symbols-rounded">
+                <li><a href="./layout/login.html"><span class="material-symbols-rounded">
                     lock
                     </span>로그인</a></li>
                 <li><a href="#"><span class="material-symbols-rounded">
@@ -95,115 +97,111 @@
     </header>
     <div class="top_btn">
         <div class="top_inner">
-            <a href="#"><img src="./common/img/top-bg.png" alt="top"></a>
+           <img src="./common/img/top-bg.png" alt="top">
             <span>TOP</span>
         </div>
     </div>
     <main>
         <section class="banner">
-            <div class="control control_right"></div>
-            <div class="control"></div>
-            <div class="img_list">
-                <div class="img_list1">
-                    <a href="#">1</a>  
+            <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+            speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true"  autoplay-delay="4000" loop="true" >
+            <div slot="container-start" class="parallax-bg"
+            data-swiper-parallax="-23%"></div>
+            <swiper-slide style="background-image: url('./common/img/main_img1.jpg');">
+                <div class="swiper_inner">
+                    <div class="title" data-swiper-parallax="-300"><h3>we are creative</h3></div>
+                    <div class="subtitle" data-swiper-parallax="-200"><p>
+                      당신과 함께하는 좋은 파트너가 되고 싶습니다. 최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.
+                     </p></div>
+                    <div class="text" data-swiper-parallax="-100">
+                      <a href="#">바로가기</a>
+                    </div>
                 </div>
-                <div class="img_list2">
-                    <a href="#">2</a>
+            </swiper-slide>
+            <swiper-slide style="background-image: url('./common/img/main_img2.jpg');">
+                <div class="swiper_inner">
+              <div class="title" data-swiper-parallax="-300"><h3>자연에 가치를 더하다</h3></div>
+              <div class="subtitle" data-swiper-parallax="-200"> <p>
+                     당신과 함께하는 좋은 파트너가 되고 싶습니다. 최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.
+                    </p></div>
+              <div class="text" data-swiper-parallax="-100">
+<a href="#">바로가기</a>
+
+            </div>
+              </div>
+            </swiper-slide>
+            <swiper-slide style="background-image: url('./common/img/main_img3.jpg');">
+                <div class="swiper_inner">
+              <div class="title" data-swiper-parallax="-300"> <h3>기술과 경험의 융합, 미래를 위한 변화</h3></div>
+              <div class="subtitle" data-swiper-parallax="-200"><p>
+                     당신과 함께하는 좋은 파트너가 되고 싶습니다. 최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.
+                    </p></div>
+              <div class="text" data-swiper-parallax="-100">
+                    <a href="#">바로가기</a>
                 </div>
-                <div class="img_list3">
-                    <a href="#">3</a>
-                </div>
-            </div>
-            <div class="bottom_play"></div>
-            <div class="bottom_pause"></div>
-            <div class="banner_txt1">
-                <h2>we are creative</h2>
-                <p>당신과 함께하는 좋은 파트너가 되고 싶습니다.<br>
-                최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.</p>
-                <a href="#">바로가기</a>
-            </div>
-            <div class="banner_txt2">
-                <h2>자연에 가치를 더하다</h2>
-                <p>당신과 함께하는 좋은 파트너가 되고 싶습니다.<br>
-                최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.</p>
-            </div>
-            <div class="banner_txt3">
-                <h2>기술과 경험의 융합, 미래를 위한 변화</h2>
-                <p>당신과 함께하는 좋은 파트너가 되고 싶습니다.<br>
-                최고의 전문성과 신뢰를 바탕으로 함께 성장해 나가겠습니다.</p>
-            </div>
-            
-            
+
+              </div>
+            </swiper-slide>
+          </swiper-container>  
         </section>
 
-        <section class="wedo_container">
+        <section class="wedo_container scroll">
              <h2>what we do</h2>
                 <ul class="wedo_wrapper">
                     <li class="wedo_box wedo_box1">
-                        <div class="wedo_box_event1">
-                            <div class="wedo_box_event2">
-                                <div class="wedo_txt">
-                                    <div class="wedo_txt1">
-                                        <h3>company</h3>
-                                        <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
-                                            주거문화 창달에 노력하고 있습니다.
-                                        </p>
-                                        <a href="#">자세히보기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <img src="./common/img/what1.jpg" alt="what1">
+                       <div class="wedo_box_event1"></div>
+                       <div class="wedo_box_event2"></div>
+                       <div class="wedo_txt">
+                            <h3>company</h3>
+                            <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
+                                주거문화 창달에 노력하고 있습니다.
+                            </p>
+                            <a href="#">자세히보기</a>
+                    </div>
                     </li>
                     <li class="wedo_box wedo_box2">
-                        <div class="wedo_box_event1">
-                            <div class="wedo_box_event2">
-                                <div class="wedo_txt">
-                                    <div class="wedo_txt1">
-                                        <h3>service</h3>
-                                        <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
-                                            주거문화 창달에 노력하고 있습니다.
-                                        </p>
-                                        <a href="#">자세히보기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <img src="./common/img/what2.jpg" alt="what2">
+                       <div class="wedo_box_event1"></div>
+                       <div class="wedo_box_event2"></div>
+                       <div class="wedo_txt">
+                        <h3>platform</h3>
+                            <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
+                                주거문화 창달에 노력하고 있습니다.
+                            </p>
+                            <a href="#">자세히보기</a>
+                    </div>
                     </li>
                     <li class="wedo_box wedo_box3">
-                        <div class="wedo_box_event1">
-                            <div class="wedo_box_event2">
-                                <div class="wedo_txt">
-                                    <div class="wedo_txt1">
-                                        <h3>platform</h3>
-                                        <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
-                                            주거문화 창달에 노력하고 있습니다.
-                                        </p>
-                                        <a href="#">자세히보기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <img src="./common/img/what3.jpg" alt="what3">
+                       <div class="wedo_box_event1"></div>
+                       <div class="wedo_box_event2"></div>
+                       <div class="wedo_txt">
+                        <h3>platform</h3>
+                            <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
+                                주거문화 창달에 노력하고 있습니다.
+                            </p>
+                            <a href="#">자세히보기</a>
+                    </div>
                     </li>
                     <li class="wedo_box wedo_box4">
-                        <div class="wedo_box_event1">
-                            <div class="wedo_box_event2">
-                                <div class="wedo_txt">
-                                    <div class="wedo_txt1">
-                                        <h3>solution</h3>
-                                        <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
-                                        주거문화 창달에 노력하고 있습니다.
-                                        </p>
-                                        <a href="#">자세히보기</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       <img src="./common/img/what4.jpg" alt="what4">
+                       <div class="wedo_box_event1"></div>
+                       <div class="wedo_box_event2"></div>
+                       <div class="wedo_txt">
+                        <h3>solution</h3>
+                            <p>주변환경을 생각하는 개발 소비자의 품격있는 삶을 위한<br>
+                                주거문화 창달에 노력하고 있습니다.
+                            </p>
+                            <a href="#">자세히보기</a>
+                    </div>
                     </li>
+                    
                 </ul>
 
         </section>
 
-        <section class="adv">
+        <section class="adv scroll">
             <div class="adv_txt">
                 <h2>자연에서 온 재료와 친환경을 향한 혁신</h2>
                 <p>사람에게 시각적인 안정을 제공하는 것 등의 실천을
@@ -213,7 +211,7 @@
             </div>
         </section>
 
-        <section class="product_container">
+        <section class="product_container scroll">
             <div class="product_inner">
                 <div class="product_txt">
                         <h2>product</h2>
@@ -299,7 +297,7 @@
             </div>
         </section>
 
-        <section class="cscenter_container">
+        <section class="cscenter_container scroll">
             <div class="cscenter_inner">
                 <div class="cscenter_txt">
                     <h2>cs center</h2>
@@ -394,7 +392,7 @@
         </div>
         </section>
         
-        <section class="etc_container">
+        <section class="etc_container scroll">
             <div class="etc_inner">
                 <div class="notice">
                     <div class="notice_inner"></div>
@@ -427,7 +425,7 @@
                         <div class="faq_btn">FAQ</div>
                     </div>
                 </div>
-            <div class="youtube">
+            <div id="player">
                 <iframe width="366" height="207" src="https://www.youtube.com/embed/P85raaEcR5g" title="YouTube video player"
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
