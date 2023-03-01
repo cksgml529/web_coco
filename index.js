@@ -9,12 +9,12 @@ topBtn.addEventListener("click", () => {
 //   menuList
 const menu = document.querySelectorAll(".sub_menu>li");
 menu.forEach((item)=>{
-    item.addEventListener("click",()=> alert('현재 작업중입니다.'))
+    item.addEventListener("click",()=> alert('현재 사용불가한 메뉴입니다.'))
     })
 
 // productList
 const product = document.querySelectorAll(".product_list>li");
-product.forEach((item)=>item.addEventListener("click",()=>alert("현재 작업중입니다.")))
+product.forEach((item)=>item.addEventListener("click",()=>alert("현재 사용불가한 메뉴입니다.")))
 
 // scroll 이벤트
 const section = document.querySelectorAll("section");
