@@ -30,6 +30,7 @@ font-size: 14px;
 }
 form .submit{
     width: 35%;
+    height: 2.344vw;
     border: none;
     padding: .5vw;
     margin-bottom: .8vw;
@@ -58,12 +59,22 @@ form .search button:last-child{
 form .search button:last-child{
     margin: 0;
 }
-form .sns{margin-top: 2vw; text-transform: uppercase; font-weight: 700;}
+form .sns{
+    margin-top: 2vw;
+    text-transform: uppercase; 
+    font-weight: 700;
+    display: grid;
+    place-content: center center;
+}
 form .sns p{
     margin-bottom: .8vw;
     text-align: center;
 }
-form .sns .kakao{
-    width: 2.344vw;height:2.344vw;
-    margin: 1vw auto 0;
+form .sns #kakao-login-btn{
+    /* width: 2.344vw;height:2.344vw; */
+    margin: 0 auto ;
+    padding: .5vw;
+}
+form .sns #kakao-login-btn img{
+    
 }
