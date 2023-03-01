@@ -216,22 +216,8 @@ header .title .menu_container .menu .sub_menu li:hover{
     background-color: rgba(255, 255, 255, .7);
 }
 
-/* ************banner_event**************** */
-.banner_txt1 a:hover{
-    background-color: rgba(255, 255, 255, .7);
-    color: #000;
-}
-.banner .img_list .img_list2:hover {
-    background-color: #fff;
-    border: 1px solid #fff;
-}
-.banner .img_list .img_list3:hover {
-    background-color: #fff;
-    border: 1px solid #fff;
-}
-.banner .bottom_pause:hover{
-    background: url(../img/controls.png)no-repeat 100% 36%;
-}
+
+
 /* ****************main-wedo****************** */
 .wedo_container{
     padding: 100px 0;
