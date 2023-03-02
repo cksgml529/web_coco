@@ -40,15 +40,15 @@ section.active{
     margin: 0 auto;
 }
 .register ul{
-    height:32px;
+    height: 1.8vw;
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
 }
 .register ul li{
-    height:2vw;
+    height:1.8vw;
     border-left: 1px solid #e3e3e3;
-    padding: 10px 20px;
+    padding: 0.521vw 1.042vw;
     margin-right: 0;
     display: flex;
     align-items: flex-start;
@@ -62,7 +62,7 @@ section.active{
 }
 .register ul li a span{
     font-size: 1em;
-    margin-right: 2px;
+    margin-right: 0.104vw;
 }
 /* **************register_event */
 .register ul li a:hover{
@@ -309,9 +309,10 @@ header .title .menu_container .menu .sub_menu li:hover{
 /* *************main-adv******************* */
 .adv{
     height: 14.792vw;
-    background: url(../img/intro_bg.jpg)no-repeat fixed 50%/cover;
+    background:  url(../img/intro_bg.jpg)no-repeat fixed 50%/cover;
     padding: 70px 20px;
 }
+
 .adv .adv_txt{
     width: 62.500vw;
     margin: 0 auto;
