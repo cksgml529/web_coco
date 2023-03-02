@@ -6,6 +6,10 @@ topBtn.addEventListener("click", () => {
     behavior:"smooth"
   });
   });
+
+//  register
+const user = document.querySelector(".register_inner>ul>li:last-child");
+user.addEventListener("click",()=>alert("현재 사용불가한 메뉴입니다."))
 //   menuList
 const menu = document.querySelectorAll(".sub_menu>li");
 menu.forEach((item)=>{
@@ -25,3 +29,6 @@ window.addEventListener('scroll',()=>{
         }
     });
 })
+
+
+

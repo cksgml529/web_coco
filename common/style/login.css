@@ -73,10 +73,20 @@ form .sns p{
     text-align: center;
 }
 form .sns #kakao-login-btn{
-    /* width: 2.344vw;height:2.344vw; */
     margin: 0 auto ;
     padding: .5vw;
 }
-form .sns #kakao-login-btn img{
-    
+form .sns .api-btn{
+    width: 95%;
+    height: 2.5vw;
+    line-height: 2.5vw;
+    margin: 0 auto .8vw;
+    border: none;
+    background-color: #FEE500;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    text-align: center;
 }
