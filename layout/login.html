@@ -54,13 +54,15 @@
     Kakao.Auth.authorize({
       redirectUri: 'http://127.0.0.1:5500/web_coco/layout/login.html',
       scope: 'profile_nickname, profile_image, account_email',
-      state: 'userme',
+      state: '/v2/user/me',
     });
-  }
   function requestUserInfo() {
     Kakao.API.request({
       url: '/v2/user/me',
-     
+      success: function(response) {
+    		console.log(response);
+    		window.location.href='http://127.0.0.1:5500/web_coco'
+    	},
     })
       .then(function(res) {
         alert(JSON.stringify(res));
@@ -71,6 +73,7 @@
         );
       });
   }
+  }
 
   function kakaoLogout() {
     	if (!Kakao.Auth.getAccessToken()) {
@@ -79,7 +82,7 @@
 	    }
 	    Kakao.Auth.logout(function(response) {
     		alert(response +' logout');
-		    window.location.href='/'
+		    window.location.href='http://127.0.0.1:5500/web_coco'
 	    });
         }
 
@@ -89,7 +92,7 @@
     	success: function(response) {
     		console.log(response);
     		//callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
-    		window.location.href='/'
+    		window.location.href='http://127.0.0.1:5500/web_coco'
     	},
     	fail: function(error) {
     		console.log('탈퇴 미완료')
@@ -97,7 +100,6 @@
     	},
 	});
 };
-  // 아래는 데모를 위한 UI 코드입니다.
   displayToken()
   function displayToken() {
     var token = getCookie('authorize-access-token');

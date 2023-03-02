@@ -39,6 +39,8 @@ form .submit{
     font-size: 1.1em;
     color: #fff;
     border-radius: 5px;
+    cursor: pointer;
+
 }
 form .search{
     width: 35%;
