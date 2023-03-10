@@ -64,7 +64,7 @@ Kakao.init('cd780fc8ec61a6d008c1b5518e5dd55b'); // 사용하려는 앱의 JavaSc
         //   window.location.href='/web_coco/'
       },
       fail: function(error) {
-          console.log('탈퇴 미완료되었습니다. 현상태 지속될 경우 고객센터에 문의바랍니다.');
+          alert('탈퇴 미완료되었습니다. 현상태 지속될 경우 고객센터에 문의바랍니다.');
           console.log(error);
       },
   });

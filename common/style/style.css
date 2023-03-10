@@ -485,6 +485,7 @@ header .title .menu_container .menu .sub_menu li:hover{
     position: relative;
     margin-right: 5px;
     padding-top: 10px;
+    cursor: pointer;
 }
 .cscenter_container .cscenter_info .cscenter_info2 .sns_img svg{
     width: 17px;
@@ -606,6 +607,7 @@ header .title .menu_container .menu .sub_menu li:hover{
     margin: 1%;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 }
 .etc_container .etc_inner .faq_btn{
     background-color: #333;
@@ -615,6 +617,7 @@ header .title .menu_container .menu .sub_menu li:hover{
     margin: 1%;
     padding: 10px;
     text-align: center;
+    cursor: pointer;
 }
 /* ****************youtube************* */
 .etc_container .etc_inner .youtube{
@@ -650,6 +653,7 @@ footer .footer_sns{
     margin-right: 10px;
     border-radius: 50%;
     position: relative;
+    cursor: pointer;
 }
 footer .footer_sns a{   
     position: absolute;
