@@ -16,6 +16,10 @@ menu.forEach((item)=>{
     item.addEventListener("click",()=> alert('현재 사용불가한 메뉴입니다.'))
     })
 
+//banner
+const banner = document.querySelector(".text>a");
+banner.addEventListener("click",()=>alert('현재 사용불가한 메뉴입니다.'));
+
 // productList
 const product = document.querySelectorAll(".product_list>li");
 product.forEach((item)=>item.addEventListener("click",()=>alert("현재 사용불가한 메뉴입니다.")))
