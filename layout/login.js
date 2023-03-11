@@ -22,7 +22,8 @@ submit.addEventListener("click",userLogin)
 
 
 // 카카오 로그인
-Kakao.init('cd780fc8ec61a6d008c1b5518e5dd55b'); // 사용하려는 앱의 JavaScript 키 입력
+const key = 'cd780fc8ec61a6d008c1b5518e5dd55b';
+Kakao.init(key);
   function kakaoLogin() {
             window.Kakao.Auth.login({
                 scope: 'profile_nickname, profile_image, account_email', 
@@ -32,10 +33,10 @@ Kakao.init('cd780fc8ec61a6d008c1b5518e5dd55b'); // 사용하려는 앱의 JavaSc
                         url: '/v2/user/me',
                         success: (res) => {
                             const kakao_account = res.kakao_account;
-                            console.log(kakao_account)
+                            console.log(kakao_account);
                         }
                     });
-                     //window.location.href='../index.html' //리다이렉트 되는 코드
+                    alert('로그인 성공하였습니다.');
                 },
                 fail: function(error) {
                     console.log(error);
@@ -50,18 +51,15 @@ Kakao.init('cd780fc8ec61a6d008c1b5518e5dd55b'); // 사용하려는 앱의 JavaSc
 	    }
 	    Kakao.Auth.logout(function(response) {
     		alert('로그아웃 되었습니다.');
-		    // window.location.href='/web_coco/'
 	    });
 
     };
     // 연결 끊기
-    function unlinkApp() {
-  Kakao.API.request({
+         function unlinkApp() {
+           Kakao.API.request({
       url: '/v1/user/unlink',
       success: function(response) {
           alert("탈퇴 성공하였습니다.");
-          //callback(); //연결끊기(탈퇴)성공시 서버에서 처리할 함수
-        //   window.location.href='/web_coco/'
       },
       fail: function(error) {
           alert('탈퇴 미완료되었습니다. 현상태 지속될 경우 고객센터에 문의바랍니다.');
